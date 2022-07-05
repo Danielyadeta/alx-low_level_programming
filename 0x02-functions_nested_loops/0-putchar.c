@@ -1,17 +1,20 @@
-#include "putchar.h"
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - starting point of the program
+*
+* Return: Always 0.
+*/
 int main(void)
 {
-	char *sh = "putchar";
+	int i;
+	char str[] = "_putchar";
 
-	while (*sh)
+	i = 0;
+
+	while (str[i] != '\0')
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 
