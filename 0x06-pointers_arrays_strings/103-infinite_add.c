@@ -1,6 +1,6 @@
 /*
  * File: 103-infinite_add.c
- * Auth: Brennan D Baraban
+ 
  */
 
 #include "main.h"
