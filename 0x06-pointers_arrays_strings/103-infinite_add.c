@@ -1,4 +1,4 @@
-*
+/*
  * File: 102-infinite_add.c
  * Auth: Brennan D Baraban
  */
