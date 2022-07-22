@@ -1,28 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
 /**
- * main - Entry Point
- * @argc: arguments
- * @argv: array pointing to arguments
- * Return: 0
- */
-int main(int argc, char *argv[])
+* main - starting point of the program
+* @argc: argument count
+* @argv: argument list
+*
+* Return: Always 0
+*/
+int main(int argc, char **argv)
 {
-	int i, sum = 0;
+	int a, b, sum;
 
-	if (argc < 1)
-		return (0);
+	sum = 0;
 
-	for (i = 1; i < argc; i++)
+	b = argc - 1;
+
+	if (argc <= 1)
 	{
-		if (!atoi(argv[i]))
+		printf("0\n");
+
+		return (0);
+	}
+
+	while (b)
+	{
+		a = atoi(argv[b]);
+
+		if (a == 0)
 		{
-			printf("%s\n", "Error");
+			printf("Error\n");
+
 			return (1);
 		}
-		sum += atoi(argv[i]);
+
+		sum += a;
+
+		b--;
 	}
+
 	printf("%d\n", sum);
 
 	return (0);
