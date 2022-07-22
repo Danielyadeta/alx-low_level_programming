@@ -1,5 +1,7 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef FILE_HOLBERTON
+#define FILE_HOLBERTON
+
+/*copy list from task*/
 
 int _putchar(char c);
 int _islower(int c);
@@ -10,7 +12,7 @@ int _isdigit(int c);
 int _strlen(char *s);
 void _puts(char *s);
 char *_strcpy(char *dest, char *src);
-int _atoi(void);
+int _atoi(char *s);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
@@ -22,4 +24,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif /* HOLBERTON_H */
+#endif
